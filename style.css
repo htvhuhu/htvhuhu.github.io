@@ -14,6 +14,10 @@ h2.name{
     color: #333;
 }
 
+h1.page-title {
+    text-align: center;
+}
+
 /* Main content area (pushes the footer to the bottom if content is short) */
 body {
     flex-grow: 1;
