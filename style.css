@@ -86,6 +86,11 @@ footer {
     position: relative;
 }
 
+/* Ensure the footer stays at the bottom even if the content is short */
+footer {
+    flex-shrink: 0;
+}
+
 .footer-bar {
     width: 50px;
     height: 5px;
