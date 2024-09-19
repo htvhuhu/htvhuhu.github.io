@@ -68,6 +68,10 @@ ul.nav-list li a {
     background-color: white;
 }
 
+section.intro{
+    text-align: justify;
+}
+
 /* Responsive Menu */
 @media (max-width: 768px) {
     body {
