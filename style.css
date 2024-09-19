@@ -4,10 +4,6 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     box-sizing: border-box;
-}
-
-/* Add padding of 30% to left and right for the page content */
-section.intro {
     padding: 20px 30%;
 }
 
@@ -16,7 +12,6 @@ header {
     display: flex;
     justify-content: center;
     background-color: #333;
-    padding: 15px 0;
 }
 
 nav {
