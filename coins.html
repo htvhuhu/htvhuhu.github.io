@@ -44,7 +44,7 @@
         let ws;
         let isPaused = false;
         let isConnected = false;
-
+        let dataCount = 0;
         function handleButtonClick() {
             if (!isConnected) {
                 connectWebSocket();
@@ -79,8 +79,6 @@
             ws.onmessage = function (event) {
                 if (isPaused)
                     return;
-
-                console.log("Received message:", event);
 
                 // Decoding the base64 data
                 let message = event.data;
@@ -138,11 +136,14 @@
         }
 
         function displayMessage(data) {
+            dataCount++;
             const output = document.getElementById('output');
             const messageDiv = document.createElement('div');
             messageDiv.className = 'message';
-            messageDiv.textContent = data; // Display parsed data as beautified JSON
+            messageDiv.textContent = `Message ${dataCount}: ${data}`;
             output.appendChild(messageDiv);
+            // Scroll to the bottom of the output div
+            output.scrollTop = output.scrollHeight;
         }
     </script>
 </body>
