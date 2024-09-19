@@ -1,0 +1,65 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #333;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+ul.nav-list {
+    list-style-type: none;
+    display: flex;
+}
+
+ul.nav-list li {
+    margin-right: 20px;
+}
+
+ul.nav-list li a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+}
+
+/* Responsive Menu */
+@media (max-width: 768px) {
+    ul.nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    ul.nav-list.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    ul.nav-list li {
+        margin: 10px 0;
+    }
+}
