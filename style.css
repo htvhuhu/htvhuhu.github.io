@@ -46,10 +46,6 @@ ul.nav-list {
     padding: 0;
 }
 
-ul.nav-list li {
-    margin-right: 10px;
-}
-
 ul.nav-list li a {
     text-decoration: none;
     color: white;
