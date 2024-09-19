@@ -91,13 +91,6 @@ footer {
     flex-shrink: 0;
 }
 
-.footer-bar {
-    width: 50px;
-    height: 5px;
-    background-color: white;
-    margin: 0 auto 15px;
-}
-
 footer p {
     margin-bottom: 15px;
 }
