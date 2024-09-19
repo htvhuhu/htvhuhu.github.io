@@ -78,7 +78,7 @@ section.intro{
 /* Footer styles */
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 10px 0px;
     background-color: #333;
     color: white;
     position: relative;
@@ -87,7 +87,7 @@ footer {
 }
 
 footer p {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 ul.footer-links {
