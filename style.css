@@ -19,7 +19,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 960px; /* Optional max-width for header content */
 }
 
 ul.nav-list {
