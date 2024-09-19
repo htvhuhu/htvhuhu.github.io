@@ -12,7 +12,7 @@ html, body {
 /* Main content area (pushes the footer to the bottom if content is short) */
 body {
     flex-grow: 1;
-    padding: 20px 20%;
+    padding: 20px 25%;
 }
 
 /* Center the header content */
@@ -61,27 +61,7 @@ ul.nav-list li a {
 /* Responsive Menu */
 @media (max-width: 768px) {
     body {
-        padding: 20px 10%; /* Reduce padding on smaller screens */
-    }
-
-    ul.nav-list {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-    }
-
-    ul.nav-list.active {
-        display: flex;
-    }
-
-    .menu-toggle {
-        display: block;
-        cursor: pointer;
-    }
-
-    ul.nav-list li {
-        margin: 10px 0;
+        padding: 20px 5%; /* Reduce padding on smaller screens */
     }
 }
 
