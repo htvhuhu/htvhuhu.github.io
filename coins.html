@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yahoo Finance WebSocket Data</title>
+    <script src="https://cdn.jsdelivr.net/npm/protobufjs/dist/protobuf.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #output {
+            background-color: #f4f4f9;
+            padding: 10px;
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            height: 75vh;
+            overflow-y: scroll;
+            width: 100vw;
+        }
+
+        div.message {
+            width: 100%;
+            word-wrap: break-word;
+            margin: 10px 0;
+        }
+
+        .message {
+            padding: 5px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Yahoo Finance WebSocket Data</h1>
+    <button id="actionButton" onclick="handleButtonClick()">Connect WebSocket</button>
+    <div id="output"></div>
+
+    <script>
+        let ws;
+        let isPaused = false;
+        let isConnected = false;
+
+        function handleButtonClick() {
+            if (!isConnected) {
+                connectWebSocket();
+            } else {
+                toggleWebSocket();
+            }
+        }
+
+        function connectWebSocket() {
+            ws = new WebSocket('wss://streamer.finance.yahoo.com/');
+
+            // When the connection opens
+            ws.onopen = function () {
+                console.log("WebSocket connection established.");
+
+                // List of tickers to subscribe to amazon, apple, google, and microsoft
+                const tickerNames = ["AMZN", "AAPL", "GOOGL", "MSFT"];
+
+                // const tickerNames = ["BTC=X", "^GSPC", "^DJI", "^IXIC", "^RUT", "CL=F", "GC=F", "SI=F", "EURUSD=X", "^TNX", "^VIX", "GBPUSD=X", "JPY=X", "BTC-USD", "^CMC200", "^FTSE", "^N225"];
+
+                // Subscribe to the list of tickers
+                const symbolList = {
+                    subscribe: tickerNames
+                };
+
+                ws.send(JSON.stringify(symbolList));
+                isConnected = true;
+                updateButtonText();
+            };
+
+            // When a message is received
+            ws.onmessage = function (event) {
+                if (isPaused)
+                    return;
+
+                console.log("Received message:", event);
+
+                // Decoding the base64 data
+                let message = event.data;
+                let binaryString = atob(message); // Decoding base64
+
+                // Convert binary string to Uint8Array
+                let messageBytes = new Uint8Array(binaryString.length);
+                for (let i = 0; i < binaryString.length; i++) {
+                    messageBytes[i] = binaryString.charCodeAt(i);
+                }
+
+                // Load and parse the protobuf message
+                protobuf.load("yaticker.proto", function (err, root) {
+                    if (err) throw err;
+
+                    let Yaticker = root.lookupType("yaticker");
+
+                    let tickerMessage = Yaticker.decode(messageBytes);
+
+                    console.log("Ticker message:", tickerMessage);
+
+                    // Process the ticker data
+                    displayMessage(JSON.stringify(tickerMessage, null, 2));
+                });
+            };
+
+            // When the WebSocket connection is closed
+            ws.onclose = function () {
+                console.log("WebSocket connection closed.");
+                isConnected = false;
+                updateButtonText();
+            };
+
+            // If there's an error
+            ws.onerror = function (error) {
+                console.log("WebSocket error:", error);
+            };
+        }
+
+        function toggleWebSocket() {
+            isPaused = !isPaused;
+            updateButtonText();
+            console.log(isPaused ? "WebSocket paused." : "WebSocket resumed.");
+        }
+
+        function updateButtonText() {
+            const actionButton = document.getElementById('actionButton');
+            if (!isConnected) {
+                actionButton.textContent = "Connect WebSocket";
+            } else if (isPaused) {
+                actionButton.textContent = "Resume WebSocket";
+            } else {
+                actionButton.textContent = "Pause WebSocket";
+            }
+        }
+
+        function displayMessage(data) {
+            const output = document.getElementById('output');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'message';
+            messageDiv.textContent = data; // Display parsed data as beautified JSON
+            output.appendChild(messageDiv);
+        }
+    </script>
+</body>
+
+</html>
