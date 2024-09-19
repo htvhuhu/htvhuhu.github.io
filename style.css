@@ -76,3 +76,44 @@ ul.nav-list li a {
         margin: 10px 0;
     }
 }
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: relative;
+}
+
+.footer-bar {
+    width: 50px;
+    height: 5px;
+    background-color: white;
+    margin: 0 auto 15px;
+}
+
+footer p {
+    margin-bottom: 15px;
+}
+
+ul.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+ul.footer-links li {
+    margin: 0 15px;
+}
+
+ul.footer-links li a {
+    text-decoration: none;
+    color: white;
+}
+
+ul.footer-links li a:hover {
+    text-decoration: underline;
+}
