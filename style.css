@@ -12,7 +12,7 @@ html, body {
 /* Main content area (pushes the footer to the bottom if content is short) */
 body {
     flex-grow: 1;
-    padding: 20px 30%;
+    padding: 20px 20%;
 }
 
 /* Center the header content */
