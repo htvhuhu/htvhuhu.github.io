@@ -1,0 +1,82 @@
+
+
+section.education {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.education h1,
+h2 {
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.education h3 {
+  color: #34495e;
+  margin-top: 20px;
+}
+
+.education p {
+  margin: 10px 0;
+}
+
+.education ul,
+.education ol {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.education ul li,
+.education ol li {
+  margin-bottom: 10px;
+}
+
+.education a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.education a:hover {
+  text-decoration: underline;
+}
+
+.education table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.education table th,
+.education table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.education table th {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.education table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.education .references ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.education .references ul li {
+  margin: 5px 0;
+  line-height: 1.4;
+}

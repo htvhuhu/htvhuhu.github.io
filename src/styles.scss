@@ -1,0 +1,182 @@
+/* You can add global styles to this file, and also import other style files */
+/* Reset some default styles */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  /* Ensure body and html take full height */
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+a {
+  cursor: pointer;
+}
+
+h2.name {
+  text-align: center;
+  color: #333;
+}
+
+h1.page-title {
+  text-align: center;
+}
+
+/* Main content area (pushes the footer to the bottom if content is short) */
+body {
+  flex-grow: 1;
+  padding: 20px 0;
+}
+
+/* Center the header content */
+header {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+ul.nav-list {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+ul.nav-list li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: white;
+}
+
+section.intro {
+  text-align: justify;
+}
+
+/* Responsive Menu */
+@media (max-width: 999px) {
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  position: relative;
+  width: 100%;
+  margin-top: auto;
+  /* Ensure footer is pushed to the bottom */
+}
+
+footer p {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+ul.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+ul.footer-links li {
+  margin: 0 5px;
+}
+
+ul.footer-links li a {
+  text-decoration: none;
+  color: white;
+}
+
+ul.footer-links li a:hover {
+  text-decoration: underline;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.profile-img {
+  width: 40%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+p{
+  font-size: 1.2em;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  color: #2c3e50;
+}
+
+a {
+  font-family: 'Roboto', sans-serif;
+  color: #3498db;
+  text-decoration: none;
+}
+
+
+.custom-progress-bar .mat-progress-bar-fill {
+  background-color: #3498db !important;
+}
+
+.mat-mdc-progress-bar {
+  --mdc-linear-progress-active-indicator-color: #3498db; /* New Active Indicator Color */
+  --mdc-linear-progress-track-color: rgba(52, 152, 219, 0.25); /* New Track Color */
+}
+
+.mat-primary {
+  --mat-full-pseudo-checkbox-selected-icon-color: #3498db;
+  --mat-full-pseudo-checkbox-selected-checkmark-color: #ffffff;
+  --mat-full-pseudo-checkbox-unselected-icon-color: rgba(255, 255, 255, 0.7);
+  --mat-full-pseudo-checkbox-disabled-selected-checkmark-color: #a6a6a6;
+  --mat-full-pseudo-checkbox-disabled-unselected-icon-color: #b3b3b3;
+  --mat-full-pseudo-checkbox-disabled-selected-icon-color: #b3b3b3;
+  --mat-minimal-pseudo-checkbox-selected-checkmark-color: #3498db;
+  --mat-minimal-pseudo-checkbox-disabled-selected-checkmark-color: #b3b3b3;
+}
+
+
+ul li{
+  font-size: 1.2em;
+  ul li{
+    font-size: 1em;
+  }
+}
+
+.float-right {
+  float: right;
+  margin-left: 10px; /* Optional: Add some margin for better spacing */
+}
