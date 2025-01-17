@@ -9,6 +9,7 @@ import { CvComponent } from './cv/cv.component';
 import { BlogComponent } from './blog/blog.component';
 
 export const routes: Routes = [
+  { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'education', component: EducationComponent },
   { path: 'about', component: AboutComponent },
@@ -17,6 +18,6 @@ export const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'cv', component: CvComponent },
   { path: 'blog', component: BlogComponent },
-  { path: '**', redirectTo: 'home', pathMatch: 'full' } // Wildcard route to handle not found routes
+  { path: '**', redirectTo: '', pathMatch: 'full' } // Wildcard route to handle not found routes
 ];
 
