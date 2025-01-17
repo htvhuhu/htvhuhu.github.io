@@ -11,6 +11,10 @@ import { RouterModule, RouterOutlet } from '@angular/router';
 })
 
 export class AppComponent implements OnDestroy {
+  reloadWindow() {
+    // redirect to /
+    window.location.href = '/';
+  }
   private clickListener: () => void;
 
   closeMenu() {
