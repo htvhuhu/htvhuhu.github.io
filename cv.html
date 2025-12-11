@@ -45,20 +45,19 @@
     <!-- Main Content -->
     <div class="main-content">
         <section class="cv">
-            <div id="loading-spinner" style="display: flex; justify-content: center; align-items: center; min-height: 650px;">
+            <div id="loading-spinner" class="loading-spinner">
                 <div class="spinner-border text-primary" role="status">
                     <span class="visually-hidden">Loading...</span>
                 </div>
             </div>
-            <iframe
-                id="cv-iframe"
-                title="Resume of Huan H. Nguyen"
-                src="https://drive.google.com/file/d/1-PWpUFw1HLDIFezl9UJqdktbX2PMOcJl/preview"
-                width="100%"
-                height="650px"
-                allow="autoplay"
-                style="display: none; border: none;"
-            ></iframe>
+            <div class="cv-container hidden" id="cv-container">
+                <iframe
+                    id="cv-iframe"
+                    title="Resume of Huan H. Nguyen"
+                    src="https://drive.google.com/file/d/1-PWpUFw1HLDIFezl9UJqdktbX2PMOcJl/preview"
+                    allow="autoplay"
+                ></iframe>
+            </div>
         </section>
     </div>
 
@@ -87,10 +86,11 @@
         // Handle iframe loading
         const iframe = document.getElementById('cv-iframe');
         const spinner = document.getElementById('loading-spinner');
+        const cvContainer = document.getElementById('cv-container');
 
         iframe.addEventListener('load', function() {
             spinner.style.display = 'none';
-            iframe.style.display = 'block';
+            cvContainer.classList.remove('hidden');
         });
     </script>
 </body>

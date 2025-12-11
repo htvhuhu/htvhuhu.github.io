@@ -209,7 +209,6 @@ section {
 /* About Section */
 .about h2 {
   color: #1a1a1a;
-} color: #2c3e50;
 }
 
 .about ul {
@@ -241,12 +240,11 @@ section {
 .experience strong {
   color: #1a1a1a;
   font-size: 1.1em;
-} font-size: 1.1em;
 }
+
 /* Skills Section */
 .skills h2 {
   color: #1a1a1a;
-} color: #2c3e50;
 }
 
 .skills ul {
@@ -258,10 +256,41 @@ section {
 }
 
 /* CV Section */
-.cv iframe {
+.cv-container {
+  width: 100%;
+  height: 800px;
+  max-width: 100%;
+}
+
+.cv-container.hidden {
+  display: none;
+}
+
+.cv-container iframe {
+  width: 100%;
+  height: 100%;
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.profile-img-container {
+  width: 40%;
 }
 /* Blog Section */
 .blogs .title-section {
@@ -304,21 +333,18 @@ section {
   color: #0066cc;
   margin-top: 1.5rem;
   font-weight: 600;
-} margin-top: 1.5rem;
 }
 
 .blogs table {
   width: 100%;
+}
+
 .blogs table th {
   background-color: #1e3c72;
   color: #fff;
   padding: 12px;
   text-align: left;
   font-weight: 600;
-} background-color: #3498db;
-  color: #fff;
-  padding: 12px;
-  text-align: left;
 }
 
 .blogs table td {
@@ -418,7 +444,7 @@ section {
 footer {
   background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #1e3c72 100%);
   color: #fff;
-  padding: 3rem 5%;
+  padding: 1rem 5%;
   margin-left: 0;
   text-align: center;
   margin-top: auto;
@@ -433,26 +459,26 @@ footer {
 
 .footer-title h3 {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-weight: 600;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
   border-bottom: none;
 }
 
 .footer-subtitle {
   color: #b3d9ff;
-  font-size: 0.95rem;
+  font-size: 0.8rem;
   font-style: italic;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .footer-links {
   list-style: none;
   padding: 0;
-  margin: 2rem 0;
+  margin: 0.75rem 0;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 0.75rem;
   flex-wrap: wrap;
 }
 
@@ -465,19 +491,19 @@ footer {
   color: #fff;
   text-decoration: none;
   font-weight: 400;
-  font-size: 0.95rem;
-  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  padding: 0.35rem 0.7rem;
   border-radius: 6px;
   transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.35rem;
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .footer-links a i {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
 }
 
 .footer-links a:hover {
@@ -489,14 +515,14 @@ footer {
 }
 
 .footer-copyright {
-  margin-top: 2rem;
-  padding-top: 1.5rem;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .footer-copyright p {
   color: #e0e0e0;
-  font-size: 0.9rem;
+  font-size: 0.75rem;
   margin: 0;
   text-align: center;
 }
@@ -554,7 +580,8 @@ footer {
   .blogs .title-section {
     padding: 1.5rem 1rem;
   }
-} .blogs .subtitle {
+  
+  .blogs .subtitle {
     font-size: 1.1rem;
   }
 }
@@ -702,20 +729,20 @@ html {
   }
 
   footer {
-    padding: 2rem 3%;
+    padding: 1.5rem 3%;
   }
 
   .footer-title h3 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 
   .footer-subtitle {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
   }
 
   .footer-links {
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 0.5rem;
     align-items: center;
   }
 
@@ -726,7 +753,7 @@ html {
   }
 
   .footer-copyright p {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
   }
 
   /* Blog adjustments */
@@ -747,9 +774,13 @@ html {
     padding: 1rem;
   }
 
-  /* CV iframe */
-  .cv iframe {
-    height: 500px;
+  /* CV container */
+  .cv-container {
+    height: 700px;
+  }
+  
+  .loading-spinner {
+    min-height: 450px;
   }
 }
 
@@ -808,11 +839,10 @@ html {
 
   footer {
     padding: 1rem 0.75rem;
-    font-size: 0.85rem;
   }
 
   .footer-links {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
   }
 
   /* Blog adjustments */
@@ -851,9 +881,13 @@ html {
     font-size: 0.9rem;
   }
 
-  /* CV iframe */
-  .cv iframe {
-    height: 400px;
+  /* CV container */
+  .cv-container {
+    height: 600px;
+  }
+  
+  .loading-spinner {
+    min-height: 400px;
   }
 
   /* Lists */
@@ -897,8 +931,12 @@ html {
     font-size: 0.9rem;
   }
 
-  .cv iframe {
-    height: 350px;
+  .cv-container {
+    height: 500px;
+  }
+  
+  .loading-spinner {
+    min-height: 350px;
   }
 }
 
