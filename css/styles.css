@@ -28,7 +28,7 @@ a {
 }
 
 a:hover {
-  color: #0066cc;
+  color: #F15A22;
 }
 
 /* Typography */
@@ -51,7 +51,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  border-bottom: 3px solid #0066cc;
+  border-bottom: 3px solid #F15A22;
   padding-bottom: 0.5rem;
   margin-bottom: 1.5rem;
 }
@@ -82,7 +82,7 @@ li {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+  background: linear-gradient(90deg, #0C2340 0%, #F15A22 100%);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 0.75rem 0;
   width: 100%;
@@ -306,7 +306,7 @@ section {
 }
 
 .publications h1 {
-  color: #1e3c72;
+  color: #0C2340;
   margin-bottom: 0.5rem;
 }
 
@@ -318,18 +318,18 @@ section {
 }
 
 .year-divider {
-  color: #1e3c72;
+  color: #0C2340;
   font-size: 1.5rem;
   font-weight: 600;
   margin-top: 2.5rem;
   margin-bottom: 1.5rem;
   padding-bottom: 0.5rem;
-  border-bottom: 3px solid #1e3c72;
+  border-bottom: 3px solid #0C2340;
 }
 
 .publication-item {
   background: #fff;
-  border-left: 4px solid #1e3c72;
+  border-left: 4px solid #0C2340;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
   border-radius: 8px;
@@ -343,7 +343,7 @@ section {
 }
 
 .pub-title {
-  color: #1e3c72;
+  color: #0C2340;
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 0.75rem;
@@ -357,7 +357,7 @@ section {
 }
 
 .pub-authors strong {
-  color: #1e3c72;
+  color: #0C2340;
   font-weight: 600;
 }
 
@@ -369,7 +369,7 @@ section {
 }
 
 .doi-link {
-  color: #0066cc;
+  color: #F15A22;
   text-decoration: none;
   font-style: normal;
   word-break: break-all;
@@ -377,12 +377,12 @@ section {
 }
 
 .doi-link:hover {
-  color: #1e3c72;
+  color: #F15A22;
   text-decoration: underline;
 }
 
 .research-heading {
-  color: #1e3c72;
+  color: #0C2340;
   font-size: 1rem;
 }
 
@@ -430,7 +430,7 @@ section {
 }
 
 .citation-icon {
-  color: #0066cc;
+  color: #0C2340;
   font-size: 0.8rem;
   margin-left: 0.3rem;
   text-decoration: none;
@@ -438,15 +438,15 @@ section {
   display: inline-flex;
   align-items: center;
   vertical-align: middle;
-  background: #f0f8ff;
+  background: #FFF5F0;
   padding: 0.3rem 0.5rem;
   border-radius: 4px;
-  border: 1px solid #0066cc;
+  border: 1px solid #F15A22;
 }
 
 .citation-icon:hover {
   color: #ffffff;
-  background: #0066cc;
+  background: #F15A22;
   transform: scale(1.05);
 }
 
@@ -475,7 +475,7 @@ section {
 
 .citation-box {
   background-color: #f8f9fa;
-  border-left: 1px solid #1e3c72;
+  border-left: 1px solid #0C2340;
   padding: 0.5rem;
   margin-top: 0.5rem;
   border-radius: 4px;
@@ -493,7 +493,7 @@ section {
   text-align: center;
   margin-bottom: 3rem;
   padding: 2.5rem 2rem;
-  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  background: linear-gradient(135deg, #0C2340 0%, #F15A22 100%);
   color: #fff;
   border-radius: 0;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -526,7 +526,7 @@ section {
 }
 
 .blogs h3 {
-  color: #0066cc;
+  color: #F15A22;
   margin-top: 1.5rem;
   font-weight: 600;
 }
@@ -536,7 +536,7 @@ section {
 }
 
 .blogs table th {
-  background-color: #1e3c72;
+  background-color: #0C2340;
   color: #fff;
   padding: 12px;
   text-align: left;
@@ -553,9 +553,9 @@ section {
 }
 
 .blogs a {
-  color: #0066cc;
+  color: #F15A22;
   text-decoration: none;
-  border-bottom: 1px solid #0066cc;
+  border-bottom: 1px solid #F15A22;
 }
 
 .blogs a:hover {
@@ -593,14 +593,14 @@ section {
 
 .contact input:focus,
 .contact textarea:focus {
-  border-color: #0066cc;
+  border-color: #F15A22;
   box-shadow: 0 0 0 0.2rem rgba(0, 102, 204, 0.15);
   outline: none;
 }
 
 .contact .btn-primary {
-  background-color: #0066cc;
-  border-color: #0066cc;
+  background-color: #F15A22;
+  border-color: #F15A22;
   padding: 12px 35px;
   font-size: 1rem;
   font-weight: 600;
@@ -638,7 +638,7 @@ section {
 
 /* Footer */
 footer {
-  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #1e3c72 100%);
+  background: linear-gradient(135deg, #0C2340 0%, #F15A22 50%, #0C2340 100%);
   color: #fff;
   padding: 1rem 5%;
   margin-left: 0;
@@ -1192,3 +1192,4 @@ html {
     content: " (" attr(href) ")";
   }
 }
+
