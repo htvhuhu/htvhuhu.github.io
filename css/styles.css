@@ -479,6 +479,10 @@ footer {
   margin-bottom: 0.75rem;
 }
 
+.academic-links .footer-links a{
+  color: black;
+}
+
 .footer-links {
   list-style: none;
   padding: 0;
