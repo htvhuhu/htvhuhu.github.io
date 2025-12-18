@@ -381,6 +381,42 @@ section {
   text-decoration: underline;
 }
 
+.research-heading {
+  color: #1e3c72;
+  font-size: 1rem;
+  margin: 0.25rem;
+}
+
+.tech-description {
+  color: #555;
+  font-size: 0.9rem;
+  margin: 0.25rem;
+}
+
+.project-description {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.project-detail {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.author-list {
+  color: #555;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.journal-info {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+}
+
 .pub-metrics {
   display: flex;
   flex-wrap: wrap;
