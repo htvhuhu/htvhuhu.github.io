@@ -298,6 +298,100 @@ section {
 .profile-img-container {
   width: 40%;
 }
+
+/* Publications Section */
+.publications {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.publications h1 {
+  color: #1e3c72;
+  margin-bottom: 0.5rem;
+}
+
+.publications-intro {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+.year-divider {
+  color: #1e3c72;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #1e3c72;
+}
+
+.publication-item {
+  background: #fff;
+  border-left: 4px solid #1e3c72;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.publication-item:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.pub-title {
+  color: #1e3c72;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.pub-authors {
+  color: #555;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.pub-authors strong {
+  color: #1e3c72;
+  font-weight: 600;
+}
+
+.pub-venue {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.doi-link {
+  color: #0066cc;
+  text-decoration: none;
+  font-style: normal;
+  word-break: break-all;
+  transition: color 0.3s ease;
+}
+
+.doi-link:hover {
+  color: #1e3c72;
+  text-decoration: underline;
+}
+
+.pub-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.pub-metrics .badge {
+  font-size: 0.8rem;
+  padding: 0.4rem 0.6rem;
+  font-weight: 500;
+}
 /* Blog Section */
 .blogs .title-section {
   text-align: center;
