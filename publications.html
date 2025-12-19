@@ -459,31 +459,14 @@
     <script src="js/main.js"></script>
     
     <script>
-        // Prevent hash from causing scroll on page load
-        if (window.location.hash) {
-            setTimeout(function() {
-                window.scrollTo(0, 0);
-            }, 1);
-        }
-        
         // Initialize tabs with hash or default to journals
         document.addEventListener('DOMContentLoaded', function() {
-            // Prevent any scrolling from hash
-            window.scrollTo(0, 0);
-            
+            // Remove hash to prevent scroll
             let hash = window.location.hash || '#journals';
-            if (!hash.startsWith('#')) hash = '#journals';
-            
-            // If no hash or invalid hash, set to journals
-            const validHashes = ['#journals', '#books', '#conferences'];
-            if (!validHashes.includes(hash)) {
-                hash = '#journals';
+            if (hash && hash !== '#journals') {
+                history.replaceState(null, null, window.location.pathname);
             }
-            
-            // Update URL without triggering scroll
-            if (window.location.hash !== hash) {
-                history.replaceState(null, null, hash);
-            }
+            hash = '#journals'; // Always start with journals
             
             // Deactivate all tabs and panes first
             document.querySelectorAll('.nav-link').forEach(link => {
@@ -494,21 +477,15 @@
                 pane.classList.remove('show', 'active');
             });
             
-            // Activate the corresponding tab
-            const tabId = hash.substring(1) + '-tab';
-            const tabTrigger = document.getElementById(tabId);
-            const targetPane = document.getElementById(hash.substring(1));
+            // Activate journals tab
+            const tabTrigger = document.getElementById('journals-tab');
+            const targetPane = document.getElementById('journals');
             
             if (tabTrigger && targetPane) {
                 tabTrigger.classList.add('active');
                 tabTrigger.setAttribute('aria-selected', 'true');
                 targetPane.classList.add('show', 'active');
             }
-            
-            // Force scroll to top after everything loads
-            setTimeout(function() {
-                window.scrollTo(0, 0);
-            }, 10);
         });
 
         function copyCitation(event, elementId) {
