@@ -216,51 +216,6 @@ section {
   font-size: 1.1rem;
   line-height: 1.8;
 }
-/* About Section */
-.about h2 {
-  color: #1a1a1a;
-}
-
-.about ul {
-  padding-left: 1.5rem;
-}
-
-.about ul li {
-  list-style-type: disc;
-}
-
-.about em {
-  font-style: italic;
-  color: #555;
-}
-
-/* Education & Experience Sections */
-.education ul,
-.experience ul {
-  padding-left: 1.5rem;
-}
-
-.education ul li,
-.experience ul li {
-  list-style-type: none;
-  padding-left: 0;
-  margin-bottom: 1.5rem;
-}
-.education strong,
-.experience strong {
-  color: #1a1a1a;
-  font-size: 1.1em;
-}
-
-/* Skills Section */
-.skills h2 {
-  color: #1a1a1a;
-}
-
-.skills ul {
-  padding-left: 1.5rem;
-  list-style-type: disc;
-}
 
 /* CV Section */
 .cv-container {
@@ -1088,27 +1043,6 @@ footer {
   }
 }
 
-/* Mobile Navigation Toggle (if needed in future) */
-.mobile-menu-toggle {
-  display: none;
-  position: fixed;
-  top: 15px;
-  left: 15px;
-  z-index: 1001;
-  background-color: #3498db;
-  color: #fff;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-@media (max-width: 999px) {
-  .mobile-menu-toggle {
-    display: block;
-  }
-}
-
 /* Utility Classes */
 .text-center {
   text-align: center;
@@ -1163,14 +1097,6 @@ html {
 .was-validated .form-control:valid,
 .form-control.is-valid {
   border-color: #28a745;
-}
-
-/* Mobile Navigation Toggle */
-.navbar-toggler {
-  padding: 0.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  cursor: pointer;
 }
 
 /* Tablets and below (992px) */
