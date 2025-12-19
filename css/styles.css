@@ -259,9 +259,6 @@ section {
 
 .skills ul {
   padding-left: 1.5rem;
-}
-
-.skills ul li {
   list-style-type: disc;
 }
 
@@ -291,14 +288,6 @@ section {
   min-height: 500px;
 }
 
-.text-justify {
-  text-align: justify;
-}
-
-.text-center {
-  text-align: center;
-}
-
 .profile-img-container {
   width: 40%;
 }
@@ -319,6 +308,21 @@ section {
   font-style: italic;
   margin-bottom: 2rem;
   font-size: 0.95rem;
+}
+
+.publication-item {
+  background: #fff !important;
+  border-left: 4px solid #F15A22 !important;
+  padding: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+  transition: all 0.3s ease !important;
+}
+
+.publication-item:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12) !important;
+  transform: translateY(-2px) !important;
 }
 
 /* Publication Tabs */
@@ -572,32 +576,7 @@ section {
   text-decoration: underline;
 }
 
-/* Publications Section */
-.publications {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.publications h1 {
-  color: #0C2340;
-  margin-bottom: 0.5rem;
-}
-
-.publication-item {
-  background: #fff !important;
-  border-left: 4px solid #F15A22 !important;
-  padding: 1.5rem !important;
-  margin-bottom: 1.5rem !important;
-  border-radius: 8px !important;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
-  transition: all 0.3s ease !important;
-}
-
-.publication-item:hover {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12) !important;
-  transform: translateY(-2px) !important;
-}
-
+/* Publication Details */
 .pub-title {
   color: #0C2340;
   font-size: 1.1rem;
@@ -685,6 +664,7 @@ section {
   font-weight: 500;
 }
 
+/* Citation Styles */
 .citation-icon {
   color: #0C2340;
   font-size: 0.8rem;
@@ -744,6 +724,7 @@ section {
   color: #333;
   margin-bottom: 0;
 }
+
 /* Blog Section */
 .blogs .title-section {
   text-align: center;
@@ -821,18 +802,14 @@ section {
 
 /* Contact Section */
 .contact h2 {
-  color: #1a1a1a;
-  margin-bottom: 2rem;
-}
-
-/* Contact Section */
-.contact h2 {
   color: #2c3e50;
   margin-bottom: 2rem;
 }
 
 .contact form {
   max-width: 600px;
+}
+
 .contact label {
   font-weight: 500;
   color: #1a1a1a;
@@ -884,7 +861,6 @@ section {
   border-color: #95a5a6;
   cursor: not-allowed;
   transform: none;
-}
 }
 
 .contact .alert {
@@ -1031,67 +1007,6 @@ footer {
   font-size: 0.9rem;
 }
 
-/* Brand-specific colors for footer links */
-footer .footer-links a[href*="orcid.org"] {
-  background-color: #A6CE39;
-  border-color: #A6CE39;
-}
-
-footer .footer-links a[href*="orcid.org"]:hover {
-  background-color: #8fb330;
-  border-color: #8fb330;
-  color: #fff;
-  box-shadow: 0 4px 12px rgba(166, 206, 57, 0.4);
-}
-
-footer .footer-links a[href*="scholar.google.com"] {
-  background-color: #4285F4;
-  border-color: #4285F4;
-}
-
-footer .footer-links a[href*="scholar.google.com"]:hover {
-  background-color: #3367D6;
-  border-color: #3367D6;
-  color: #fff;
-  box-shadow: 0 4px 12px rgba(66, 133, 244, 0.4);
-}
-
-footer .footer-links a[href*="scopus.com"] {
-  background-color: #E9711C;
-  border-color: #E9711C;
-}
-
-footer .footer-links a[href*="scopus.com"]:hover {
-  background-color: #d06319;
-  border-color: #d06319;
-  color: #fff;
-  box-shadow: 0 4px 12px rgba(233, 113, 28, 0.4);
-}
-
-footer .footer-links a[href*="researchgate.net"] {
-  background-color: #00D0AF;
-  border-color: #00D0AF;
-}
-
-footer .footer-links a[href*="researchgate.net"]:hover {
-  background-color: #00b396;
-  border-color: #00b396;
-  color: #fff;
-  box-shadow: 0 4px 12px rgba(0, 208, 175, 0.4);
-}
-
-footer .footer-links a[href*="linkedin.com"] {
-  background-color: #0A66C2;
-  border-color: #0A66C2;
-}
-
-footer .footer-links a[href*="linkedin.com"]:hover {
-  background-color: #084d92;
-  border-color: #084d92;
-  color: #fff;
-  box-shadow: 0 4px 12px rgba(10, 102, 194, 0.4);
-}
-
 .footer-links a:hover {
   background-color: rgba(241, 90, 34, 0.1);
   border-color: #F15A22;
@@ -1111,36 +1026,6 @@ footer .footer-links a[href*="linkedin.com"]:hover {
   font-size: 0.75rem;
   margin: 0;
   text-align: center;
-}
-/* Academic links responsive adjustments */
-@media (max-width: 768px) {
-  .academic-links .footer-links {
-    gap: 0.35rem;
-  }
-
-  .academic-links .footer-links a {
-    font-size: 0.65rem;
-    padding: 0.25rem 0.4rem;
-  }
-
-  .academic-links .footer-links a i {
-    font-size: 0.75rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .academic-links .footer-links {
-    gap: 0.3rem;
-  }
-
-  .academic-links .footer-links a {
-    font-size: 0.6rem;
-    padding: 0.25rem 0.35rem;
-  }
-
-  .academic-links .footer-links a i {
-    font-size: 0.7rem;
-  }
 }
 
 /* Responsive Design */
@@ -1231,10 +1116,6 @@ footer .footer-links a[href*="linkedin.com"]:hover {
 
 .text-justify {
   text-align: justify;
-}
-
-.flex-align-center {
-  align-items: center;
 }
 
 /* Loading Spinner */
