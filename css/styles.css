@@ -103,7 +103,9 @@ li {
 }
 
 .navbar-brand:hover {
-  color: #00bcd4 !important;
+  background-color: rgba(241, 90, 34, 0.1);
+  border-color: #F15A22;
+  color: #F15A22;
 }
 
 .navbar-toggler {
@@ -150,13 +152,15 @@ li {
 }
 
 .nav-link:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #00bcd4 !important;
+  background-color: rgba(241, 90, 34, 0.1);
+  border-color: #F15A22;
+  color: #F15A22 !important;
 }
 
 .nav-link.active {
-  background-color: rgba(0, 188, 212, 0.2);
-  color: #00bcd4 !important;
+  background-color: rgba(241, 90, 34, 0.1);
+  border-color: #F15A22;
+  color: #F15A22 !important;
   font-weight: 500;
 }
 
@@ -670,7 +674,75 @@ footer {
 }
 
 .academic-links .footer-links a{
-  color: black;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.academic-links .footer-links a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Brand-specific colors for academic links */
+.academic-links .footer-links a[href*="orcid.org"] {
+  background-color: #A6CE39;
+  border-color: #A6CE39;
+}
+
+.academic-links .footer-links a[href*="orcid.org"]:hover {
+  background-color: #8fb330;
+  border-color: #8fb330;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(166, 206, 57, 0.4);
+}
+
+.academic-links .footer-links a[href*="scholar.google.com"] {
+  background-color: #4285F4;
+  border-color: #4285F4;
+}
+
+.academic-links .footer-links a[href*="scholar.google.com"]:hover {
+  background-color: #3367D6;
+  border-color: #3367D6;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(66, 133, 244, 0.4);
+}
+
+.academic-links .footer-links a[href*="scopus.com"] {
+  background-color: #E9711C;
+  border-color: #E9711C;
+}
+
+.academic-links .footer-links a[href*="scopus.com"]:hover {
+  background-color: #d06319;
+  border-color: #d06319;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(233, 113, 28, 0.4);
+}
+
+.academic-links .footer-links a[href*="researchgate.net"] {
+  background-color: #00D0AF;
+  border-color: #00D0AF;
+}
+
+.academic-links .footer-links a[href*="researchgate.net"]:hover {
+  background-color: #00b396;
+  border-color: #00b396;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 208, 175, 0.4);
+}
+
+.academic-links .footer-links a[href*="linkedin.com"] {
+  background-color: #0A66C2;
+  border-color: #0A66C2;
+}
+
+.academic-links .footer-links a[href*="linkedin.com"]:hover {
+  background-color: #084d92;
+  border-color: #084d92;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(10, 102, 194, 0.4);
 }
 
 .footer-links {
@@ -707,10 +779,71 @@ footer {
   font-size: 0.9rem;
 }
 
+/* Brand-specific colors for footer links */
+footer .footer-links a[href*="orcid.org"] {
+  background-color: #A6CE39;
+  border-color: #A6CE39;
+}
+
+footer .footer-links a[href*="orcid.org"]:hover {
+  background-color: #8fb330;
+  border-color: #8fb330;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(166, 206, 57, 0.4);
+}
+
+footer .footer-links a[href*="scholar.google.com"] {
+  background-color: #4285F4;
+  border-color: #4285F4;
+}
+
+footer .footer-links a[href*="scholar.google.com"]:hover {
+  background-color: #3367D6;
+  border-color: #3367D6;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(66, 133, 244, 0.4);
+}
+
+footer .footer-links a[href*="scopus.com"] {
+  background-color: #E9711C;
+  border-color: #E9711C;
+}
+
+footer .footer-links a[href*="scopus.com"]:hover {
+  background-color: #d06319;
+  border-color: #d06319;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(233, 113, 28, 0.4);
+}
+
+footer .footer-links a[href*="researchgate.net"] {
+  background-color: #00D0AF;
+  border-color: #00D0AF;
+}
+
+footer .footer-links a[href*="researchgate.net"]:hover {
+  background-color: #00b396;
+  border-color: #00b396;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 208, 175, 0.4);
+}
+
+footer .footer-links a[href*="linkedin.com"] {
+  background-color: #0A66C2;
+  border-color: #0A66C2;
+}
+
+footer .footer-links a[href*="linkedin.com"]:hover {
+  background-color: #084d92;
+  border-color: #084d92;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(10, 102, 194, 0.4);
+}
+
 .footer-links a:hover {
-  background-color: rgba(0, 188, 212, 0.3);
-  border-color: #00bcd4;
-  color: #00bcd4;
+  background-color: rgba(241, 90, 34, 0.1);
+  border-color: #F15A22;
+  color: #F15A22;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 188, 212, 0.3);
 }
