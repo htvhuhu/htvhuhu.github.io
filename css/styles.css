@@ -1083,6 +1083,17 @@ html {
   .nav-link {
     padding: 0.75rem 1rem !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: transparent !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+  }
+
+  .nav-link.active {
+    border: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-left: 3px solid #fff !important;
+    background-color: rgba(255, 255, 255, 0.05) !important;
   }
 
   .main-content {
