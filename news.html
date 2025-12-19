@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Huan (Noah) Nguyen, MBA, MSc, PMP®</title>
+    <title>News & Updates - Huan (Noah) Nguyen, MBA, MSc, PMP®</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 
     <!-- Google Fonts -->
@@ -16,7 +16,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css?v1.0">
+    <link rel="stylesheet" href="css/styles.css?v1.1">
 </head>
 <body>
     <!-- Navigation Top Bar -->
@@ -34,12 +34,14 @@
                     <li class="nav-item">
                         <a class="nav-link" href="research.html">Research</a>
                     </li>
-                    <li class="nav-item">                        <a class="nav-link" href="publications.html">Publications</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="publications.html">Publications</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="news.html">News</a>
+                        <a class="nav-link active" href="news.html">News</a>
                     </li>
-                    <li class="nav-item">                        <a class="nav-link active" href="cv.html">CV</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cv.html">CV</a>
                     </li>
                 </ul>
             </div>
@@ -48,19 +50,21 @@
 
     <!-- Main Content -->
     <div class="main-content">
-        <section class="cv">
-            <div id="loading-spinner" class="loading-spinner">
-                <div class="spinner-border text-primary" role="status">
-                    <span class="visually-hidden">Loading...</span>
+        <section class="news">
+            <h1>News & Updates</h1>
+            <p style="font-style: italic; font-size: 0.9rem; margin-bottom: 2rem;">Latest news, achievements, and announcements</p>
+
+            <!-- 2025 News -->
+            <h2 class="year-divider">2025</h2>
+            <div class="news-item">
+                <div class="news-date">
+                    <i class="bi bi-calendar-event"></i> December 2025
                 </div>
-            </div>
-            <div class="cv-container hidden" id="cv-container">
-                <iframe
-                    id="cv-iframe"
-                    title="Resume of Huan H. Nguyen"
-                    src="https://drive.google.com/file/d/1-PWpUFw1HLDIFezl9UJqdktbX2PMOcJl/preview"
-                    allow="autoplay"
-                ></iframe>
+                <h3 class="news-title">Conference Presentations at ICIS 2025</h3>
+                <p class="news-content">
+                    My collaborators presented our research on AI-powered platform data access policies and misinformation fact-checking at the International Conference on Information Systems (ICIS) 2025.
+                </p>
+                <a href="publications.html#conferences" class="news-link">View Conference Papers <i class="bi bi-arrow-right"></i></a>
             </div>
         </section>
     </div>
@@ -86,16 +90,5 @@
 
     <!-- Custom JS -->
     <script src="js/main.js"></script>
-    <script>
-        // Handle iframe loading
-        const iframe = document.getElementById('cv-iframe');
-        const spinner = document.getElementById('loading-spinner');
-        const cvContainer = document.getElementById('cv-container');
-
-        iframe.addEventListener('load', function() {
-            spinner.style.display = 'none';
-            cvContainer.classList.remove('hidden');
-        });
-    </script>
 </body>
 </html>

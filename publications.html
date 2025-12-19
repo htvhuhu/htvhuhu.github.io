@@ -16,7 +16,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-            <link rel="stylesheet" href="css/styles.css?v1.0">
+            <link rel="stylesheet" href="css/styles.css?v1.2">
 </head>
 <body>
     <!-- Navigation Top Bar -->
@@ -38,6 +38,9 @@
                         <a class="nav-link active" href="publications.html">Publications</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="news.html">News</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="cv.html">CV</a>
                     </li>
                 </ul>
@@ -50,14 +53,37 @@
         <section class="publications">
             <h1>Publications</h1>
             <p style="font-style: italic; font-size: 0.9rem; margin-bottom: 1.5rem;">(*) Corresponding author</p>
-            <!-- Journal Publications -->
-            <h2 class="year-divider">Journal Publications</h2>
+            
+            <!-- Publication Tabs -->
+            <ul class="nav nav-tabs" id="publicationTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="journals-tab" data-bs-toggle="tab" data-bs-target="#journals" type="button" role="tab" aria-controls="journals" aria-selected="true">
+                        <i class="bi bi-journal-text"></i> Journal Articles
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="books-tab" data-bs-toggle="tab" data-bs-target="#books" type="button" role="tab" aria-controls="books" aria-selected="false">
+                        <i class="bi bi-book"></i> Book Chapters
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="conferences-tab" data-bs-toggle="tab" data-bs-target="#conferences" type="button" role="tab" aria-controls="conferences" aria-selected="false">
+                        <i class="bi bi-people"></i> Conferences
+                    </button>
+                </li>
+            </ul>
+
+            <!-- Tab Content -->
+            <div class="tab-content" id="publicationTabContent">
+                <!-- Journal Articles Tab -->
+                <div class="tab-pane fade show active" id="journals" role="tabpanel" aria-labelledby="journals-tab">
 
             <div class="publication-item">
                 <h3 class="pub-title">Empowering Workplaces: How New Ways of Working Foster Organizational Citizenship Behaviors?</h3>
                 <p class="pub-authors">Nguyen, P. N.-D., Giang, T. T., Duong, H. C., & <strong>Nguyen, H. H.</strong></p>
                 <p class="pub-venue"><em>SAGE Open</em>, 15(4), 2025. <a href="https://doi.org/10.1177/21582440251393887" target="_blank" class="doi-link">https://doi.org/10.1177/21582440251393887</a></p>
                 <div class="pub-metrics">
+                    <span class="badge bg-dark">Journal Article</span>
                     <span class="badge bg-primary">SJR Q1</span>
                     <span class="badge bg-info">CiteScore: 3.6</span>
                     <span class="badge bg-success">WoS-SSCI</span>
@@ -80,6 +106,7 @@
                 <p class="pub-authors"><strong>Nguyen, H. H.</strong>, Duong, C. H., Giang, T. T., & Nguyen, P. N.-D.</p>
                 <p class="pub-venue"><em>SAGE Open</em>, 15(3), 2025. <a href="https://doi.org/10.1177/21582440251365790" target="_blank" class="doi-link">https://doi.org/10.1177/21582440251365790</a></p>
                 <div class="pub-metrics">
+                    <span class="badge bg-dark">Journal Article</span>
                     <span class="badge bg-primary">SJR Q1</span>
                     <span class="badge bg-info">CiteScore: 3.6</span>
                     <span class="badge bg-success">WoS-SSCI</span>
@@ -102,6 +129,7 @@
                 <p class="pub-authors">Nguyen, P. N. D., Pham, K. T. N., Duong, C. H., Giang, T. T., Nguyen, Y. L. D., & <strong>Nguyen, H. H.</strong></p>
                 <p class="pub-venue"><em>European Journal of Innovation Management</em>, 2025. <a href="https://doi.org/10.1108/EJIM-02-2025-0136" target="_blank" class="doi-link">https://doi.org/10.1108/EJIM-02-2025-0136</a></p>
                 <div class="pub-metrics">
+                    <span class="badge bg-dark">Journal Article</span>
                     <span class="badge bg-primary">SJR Q1</span>
                     <span class="badge bg-info">CiteScore: 12.3</span>
                     <span class="badge bg-success">WoS-SSCI</span>
@@ -126,6 +154,7 @@
                 <p class="pub-authors">Nguyen, N. D., Truong, N.-A., Dao, P. Q., & <strong>Nguyen, H. H.</strong></p>
                 <p class="pub-venue"><em>Computers in Human Behavior</em>, 162, 108455, 2025. <a href="https://doi.org/10.1016/j.chb.2024.108455" target="_blank" class="doi-link">https://doi.org/10.1016/j.chb.2024.108455</a></p>
                 <div class="pub-metrics">
+                    <span class="badge bg-dark">Journal Article</span>
                     <span class="badge bg-primary">SJR Q1</span>
                     <span class="badge bg-info">CiteScore: 20.7</span>
                     <span class="badge bg-success">WoS-SSCI</span>
@@ -150,6 +179,7 @@
                 <p class="pub-authors">Nguyen, P. N. D., <strong>Nguyen, H. H.</strong> (*), Giang, T. T., Duong, H. C., & Nguyen, L. D. Y.</p>
                 <p class="pub-venue"><em>SAGE Open</em>, 14(4), 21582440241289988, 2024. <a href="https://doi.org/10.1177/21582440241289988" target="_blank" class="doi-link">https://doi.org/10.1177/21582440241289988</a></p>
                 <div class="pub-metrics">
+                    <span class="badge bg-dark">Journal Article</span>
                     <span class="badge bg-primary">SJR Q1</span>
                     <span class="badge bg-info">CiteScore: 3.6</span>
                     <span class="badge bg-success">WoS-SSCI</span>
@@ -172,6 +202,7 @@
                 <p class="pub-authors">Nguyen, P. N. D., & <strong>Nguyen, H. H.</strong> (*)</p>
                 <p class="pub-venue"><em>Technological Forecasting and Social Change</em>, 203, 123330, 2024. <a href="https://doi.org/10.1016/j.techfore.2024.123330" target="_blank" class="doi-link">https://doi.org/10.1016/j.techfore.2024.123330</a></p>
                 <div class="pub-metrics">
+                    <span class="badge bg-dark">Journal Article</span>
                     <span class="badge bg-primary">SJR Q1</span>
                     <span class="badge bg-info">CiteScore: 26.3</span>
                     <span class="badge bg-success">WoS-SSCI</span>
@@ -196,6 +227,7 @@
                 <p class="pub-authors">Nguyen, P. N. D., & <strong>Nguyen, H. H.</strong> (*)</p>
                 <p class="pub-venue"><em>SAGE Open</em>, 14(1), 2024. <a href="https://doi.org/10.1177/21582440241239493" target="_blank" class="doi-link">https://doi.org/10.1177/21582440241239493</a></p>
                 <div class="pub-metrics">
+                    <span class="badge bg-dark">Journal Article</span>
                     <span class="badge bg-primary">SJR Q1</span>
                     <span class="badge bg-info">CiteScore: 3.6</span>
                     <span class="badge bg-success">WoS-SSCI</span>
@@ -218,6 +250,7 @@
                 <p class="pub-authors">Thao, P. K., Phuong, N. N. D., Phuc, V. T., & <strong>Huan, N. H.</strong></p>
                 <p class="pub-venue"><em>Data in Brief</em>, 52, 110029, 2024. <a href="https://doi.org/10.1016/j.dib.2024.110029" target="_blank" class="doi-link">https://doi.org/10.1016/j.dib.2024.110029</a></p>
                 <div class="pub-metrics">
+                    <span class="badge bg-dark">Journal Article</span>
                     <span class="badge bg-primary">SJR Q3</span>
                     <span class="badge bg-success">WoS-ESCI</span>
                     <a href="#" data-bs-toggle="collapse" data-bs-target="#cite8" class="citation-icon" title="Show citation" style="transform: rotate(180deg);"><i class="bi bi-quote"></i></a>
@@ -230,9 +263,10 @@
                     <p class="citation-text" id="cite8-text">Thao, P. K., Phuong, N. N. D., Phuc, V. T., & Huan, N. H. (2024). Organizational commitment and its impact on employee performance in the water supply industry: Dataset from Vietnamese state-owned enterprises. <i>Data in Brief, 52</i>, 110029. https://doi.org/10.1016/j.dib.2024.110029</p>
                 </div>
             </div>
+                </div>
 
-            <!-- Book Chapters -->
-            <h2 class="year-divider">Book Chapters</h2>
+                <!-- Book Chapters Tab -->
+                <div class="tab-pane fade" id="books" role="tabpanel" aria-labelledby="books-tab">
 
             <div class="publication-item">
                 <h3 class="pub-title">
@@ -241,7 +275,7 @@
                 <p class="pub-authors">Nguyen, P. N.-D., Duong, C. H., Giang, T. T., & <strong>Nguyen, H. H.</strong> (*)</p>
                 <p class="pub-venue"><em>Future of Work in Asia: Transforming Work Models, Workforce Dynamics</em>. Springer, Cham, 2025. <a href="https://doi.org/10.1007/978-3-031-95804-5_9" target="_blank" class="doi-link">https://doi.org/10.1007/978-3-031-95804-5_9</a></p>
                 <div class="pub-metrics">
-                    <span class="badge bg-secondary">Book Chapter</span>
+                    <span class="badge bg-dark">Book Chapter</span>
                     <a href="#" data-bs-toggle="collapse" data-bs-target="#cite9" class="citation-icon" title="Show citation" style="transform: rotate(180deg);"><i class="bi bi-quote"></i></a>
                 </div>
                 <div id="cite9" class="collapse citation-box">
@@ -260,7 +294,7 @@
                 <p class="pub-authors">Nguyen, P. N.-D., & <strong>Nguyen, H. H.</strong> (*)</p>
                 <p class="pub-venue"><em>Information Systems Research in Vietnam, Volume 3: A Shared Vision and New</em>. Springer, Singapore, 2025. <a href="https://doi.org/10.1007/978-981-97-9835-3_1" target="_blank" class="doi-link">https://doi.org/10.1007/978-981-97-9835-3_1</a></p>
                 <div class="pub-metrics">
-                    <span class="badge bg-secondary">Book Chapter</span>
+                    <span class="badge bg-dark">Book Chapter</span>
                     <span class="badge bg-info">Scopus</span>
                     <a href="#" data-bs-toggle="collapse" data-bs-target="#cite10" class="citation-icon" title="Show citation" style="transform: rotate(180deg);"><i class="bi bi-quote"></i></a>
                 </div>
@@ -280,7 +314,7 @@
                 <p class="pub-authors">Yen, L. N. D., & <strong>Hong, H. N.</strong> (*)</p>
                 <p class="pub-venue"><em>Business Innovation for the Post-Pandemic Era in Vietnam</em> (pp. 47-59). Springer, Singapore, 2023. <a href="https://doi.org/10.1007/978-981-99-1545-3_5" target="_blank" class="doi-link">https://doi.org/10.1007/978-981-99-1545-3_5</a></p>
                 <div class="pub-metrics">
-                    <span class="badge bg-secondary">Book Chapter</span>
+                    <span class="badge bg-dark">Book Chapter</span>
                     <span class="badge bg-info">Scopus</span>
                     <a href="#" data-bs-toggle="collapse" data-bs-target="#cite11" class="citation-icon" title="Show citation" style="transform: rotate(180deg);"><i class="bi bi-quote"></i></a>
                 </div>
@@ -292,9 +326,10 @@
                     <p class="citation-text" id="cite11-text">Yen, L. N. D., & Hong, H. N. (2023). Enhancing citizen willingness to use E-government: The case of Ho Chi Minh. In <i>Business Innovation for the Post-Pandemic Era in Vietnam</i> (pp. 47-59). Springer. https://doi.org/10.1007/978-981-99-1545-3_5</p>
                 </div>
             </div>
+                </div>
 
-            <!-- Conference Proceedings -->
-            <h2 class="year-divider">Conference Proceedings</h2>
+                <!-- Conferences Tab -->
+                <div class="tab-pane fade" id="conferences" role="tabpanel" aria-labelledby="conferences-tab">
 
             <div class="publication-item">
                 <h3 class="pub-title">
@@ -303,7 +338,8 @@
                 <p class="pub-authors">Tran, T., <strong>Nguyen, H. H.</strong>, & Nguyen, N. H. M.</p>
                 <p class="pub-venue"><em>International Conference on Information Systems (ICIS) 2025 - TREOs</em>. 121. <a href="https://aisel.aisnet.org/treos_icis2025/121" target="_blank" class="doi-link">https://aisel.aisnet.org/treos_icis2025/121</a></p>
                 <div class="pub-metrics">
-                    <span class="badge bg-danger">A* Conference (CORE)</span>
+                    <span class="badge bg-dark">Conference Proceeding</span>
+                    <span class="badge bg-danger">CORE-A*</span>
                     <a href="#" data-bs-toggle="collapse" data-bs-target="#cite12" class="citation-icon" title="Show citation" style="transform: rotate(180deg);"><i class="bi bi-quote"></i></a>
                 </div>
                 <div id="cite12" class="collapse citation-box">
@@ -322,7 +358,8 @@
                 <p class="pub-authors">Vu-Minh, A., Vo, H., Hoang, D.-V., <strong>Nguyen, H. H.</strong>, Gao, K., & Tran, T.</p>
                 <p class="pub-venue"><em>International Conference on Information Systems (ICIS) 2025 Proceedings</em>. 19. <a href="https://aisel.aisnet.org/icis2025/cyb_security/cyb_security/19" target="_blank" class="doi-link">https://aisel.aisnet.org/icis2025/cyb_security/cyb_security/19</a></p>
                 <div class="pub-metrics">
-                    <span class="badge bg-danger">A* Conference (CORE)</span>
+                    <span class="badge bg-dark">Conference Proceeding</span>
+                    <span class="badge bg-danger">CORE-A*</span>
                     <a href="#" data-bs-toggle="collapse" data-bs-target="#cite13" class="citation-icon" title="Show citation" style="transform: rotate(180deg);"><i class="bi bi-quote"></i></a>
                 </div>
                 <div id="cite13" class="collapse citation-box">
@@ -341,6 +378,7 @@
                 <p class="pub-authors">Vu-Minh, A., <strong>Nguyen, H. H.</strong>, & Tran, T.</p>
                 <p class="pub-venue"><em>Pacific Asia Conference on Information Systems (PACIS) 2025 Proceedings</em>. 9. <a href="https://aisel.aisnet.org/pacis2025/security/security/9" target="_blank" class="doi-link">https://aisel.aisnet.org/pacis2025/security/security/9</a></p>
                 <div class="pub-metrics">
+                    <span class="badge bg-dark">Conference Proceeding</span>
                     <span class="badge bg-danger">A Conference (CORE)</span>
                     <a href="#" data-bs-toggle="collapse" data-bs-target="#cite14" class="citation-icon" title="Show citation" style="transform: rotate(180deg);"><i class="bi bi-quote"></i></a>
                 </div>
@@ -360,7 +398,8 @@
                 <p class="pub-authors">Do, B., <strong>Nguyen, H. H.</strong>, Tran, T., & Sarkar, S.</p>
                 <p class="pub-venue"><em>International Conference on Information Systems (ICIS) 2024 - TREOs</em>. 107. <a href="https://aisel.aisnet.org/treos_icis2024/107" target="_blank" class="doi-link">https://aisel.aisnet.org/treos_icis2024/107</a></p>
                 <div class="pub-metrics">
-                    <span class="badge bg-danger">A* Conference (CORE)</span>
+                    <span class="badge bg-dark">Conference Proceeding</span>
+                    <span class="badge bg-danger">CORE-A*</span>
                     <span class="badge bg-info">Scopus</span>
                     <a href="#" data-bs-toggle="collapse" data-bs-target="#cite15" class="citation-icon" title="Show citation" style="transform: rotate(180deg);"><i class="bi bi-quote"></i></a>
                 </div>
@@ -380,6 +419,7 @@
                 <p class="pub-authors">Phuong, N. N. D., <strong>Huan, N. H.</strong> (*), & Anh, N. D. T.</p>
                 <p class="pub-venue"><em>Transportation Research Procedia</em>, 80, 95-102, 2024. <a href="https://doi.org/10.1016/j.trpro.2024.09.013" target="_blank" class="doi-link">https://doi.org/10.1016/j.trpro.2024.09.013</a></p>
                 <div class="pub-metrics">
+                    <span class="badge bg-dark">Conference Proceeding</span>
                     <span class="badge bg-info">Scopus</span>
                     <a href="#" data-bs-toggle="collapse" data-bs-target="#cite16" class="citation-icon" title="Show citation" style="transform: rotate(180deg);"><i class="bi bi-quote"></i></a>
                 </div>
@@ -389,6 +429,8 @@
                         <button onclick="copyCitation(event, 'cite16-text')" class="copy-btn"><i class="bi bi-clipboard"></i> Copy</button>
                     </div>
                     <p class="citation-text" id="cite16-text">Phuong, N. N. D., Huan, N. H., & Anh, N. D. T. (2024). Beyond the price: Unlocking the power of service employee self-efficacy in building low-cost airline loyalty in emerging countries. <i>Transportation Research Procedia, 80</i>, 95-102. https://doi.org/10.1016/j.trpro.2024.09.013</p>
+                </div>
+            </div>
                 </div>
             </div>
         </section>
@@ -417,6 +459,58 @@
     <script src="js/main.js"></script>
     
     <script>
+        // Prevent hash from causing scroll on page load
+        if (window.location.hash) {
+            setTimeout(function() {
+                window.scrollTo(0, 0);
+            }, 1);
+        }
+        
+        // Initialize tabs with hash or default to journals
+        document.addEventListener('DOMContentLoaded', function() {
+            // Prevent any scrolling from hash
+            window.scrollTo(0, 0);
+            
+            let hash = window.location.hash || '#journals';
+            if (!hash.startsWith('#')) hash = '#journals';
+            
+            // If no hash or invalid hash, set to journals
+            const validHashes = ['#journals', '#books', '#conferences'];
+            if (!validHashes.includes(hash)) {
+                hash = '#journals';
+            }
+            
+            // Update URL without triggering scroll
+            if (window.location.hash !== hash) {
+                history.replaceState(null, null, hash);
+            }
+            
+            // Deactivate all tabs and panes first
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+                link.setAttribute('aria-selected', 'false');
+            });
+            document.querySelectorAll('.tab-pane').forEach(pane => {
+                pane.classList.remove('show', 'active');
+            });
+            
+            // Activate the corresponding tab
+            const tabId = hash.substring(1) + '-tab';
+            const tabTrigger = document.getElementById(tabId);
+            const targetPane = document.getElementById(hash.substring(1));
+            
+            if (tabTrigger && targetPane) {
+                tabTrigger.classList.add('active');
+                tabTrigger.setAttribute('aria-selected', 'true');
+                targetPane.classList.add('show', 'active');
+            }
+            
+            // Force scroll to top after everything loads
+            setTimeout(function() {
+                window.scrollTo(0, 0);
+            }, 10);
+        });
+
         function copyCitation(event, elementId) {
             const citationElement = document.getElementById(elementId);
             const citationText = citationElement.innerText;
