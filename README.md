@@ -1,1 +1,1 @@
-# # © 2026 Hong Huan (Noah) Nguyen, MBA, MSc, PMP®. All rights reserved.
+# # © 2026 Huan (Noah) Nguyen, MBA, MSc, PMP®. All rights reserved.
