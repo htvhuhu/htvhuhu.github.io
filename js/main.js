@@ -25,7 +25,7 @@
      */
     function setActiveNavLink() {
         const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-        const navLinks = document.querySelectorAll('.nav-link');
+        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
 
         navLinks.forEach(link => {
             link.classList.remove('active');
@@ -43,7 +43,7 @@
      * Add click event listeners to navigation links
      */
     function addNavigationListeners() {
-        const navLinks = document.querySelectorAll('.nav-link');
+        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
 
         navLinks.forEach(link => {
             link.addEventListener('click', function(e) {
