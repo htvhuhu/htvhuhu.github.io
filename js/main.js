@@ -22,38 +22,20 @@
 
     /**
      * Set active class on navigation link based on current page
+     * Note: This is now handled statically in HTML markup for better reliability
      */
     function setActiveNavLink() {
-        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-
-        navLinks.forEach(link => {
-            link.classList.remove('active');
-
-            const href = link.getAttribute('href');
-            if (href === currentPage ||
-                (currentPage === '' && href === 'index.html') ||
-                (currentPage === '/' && href === 'index.html')) {
-                link.classList.add('active');
-            }
-        });
+        // Static active classes in HTML are sufficient
+        // No dynamic manipulation needed
     }
 
     /**
      * Add click event listeners to navigation links
+     * Note: Removed automatic active class handling to prevent conflicts
      */
     function addNavigationListeners() {
-        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-
-        navLinks.forEach(link => {
-            link.addEventListener('click', function(e) {
-                // Remove active class from all links
-                navLinks.forEach(l => l.classList.remove('active'));
-
-                // Add active class to clicked link
-                this.classList.add('active');
-            });
-        });
+        // The navbar handles active states through static HTML markup
+        // No dynamic active class manipulation needed
     }
 
     /**
