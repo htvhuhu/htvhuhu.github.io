@@ -145,15 +145,16 @@ li {
   font-weight: 400;
   padding: 0.5rem 1rem !important;
   border: none !important;
-  border-radius: 4px;
+  border-radius: 4px !important;
   transition: all 0.3s ease;
   text-decoration: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
   touch-action: manipulation;
+  display: inline-block !important;
 }
 
 .navbar-nav .nav-link:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2) !important;
   border-color: rgba(255, 255, 255, 0.4) !important;
   color: #fff !important;
 }
@@ -163,7 +164,8 @@ li {
   border: none !important;
   border-bottom: 3px solid #fff !important;
   color: #fff !important;
-  font-weight: 600;
+  font-weight: 600 !important;
+  display: inline-block !important;
 }
 
 /* Main Content */
