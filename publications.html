@@ -16,7 +16,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-            <link rel="stylesheet" href="css/styles.css?v1.10">
+            <link rel="stylesheet" href="css/styles.css?v1.11">
 </head>
 <body>
     <!-- Navigation Top Bar -->
@@ -469,8 +469,8 @@
             }
             hash = '#journals'; // Always start with journals
             
-            // Deactivate all tabs and panes first
-            document.querySelectorAll('.nav-link').forEach(link => {
+            // Deactivate all PUBLICATION tabs and panes only (not navbar nav-links)
+            document.querySelectorAll('#publicationTabs .nav-link').forEach(link => {
                 link.classList.remove('active');
                 link.setAttribute('aria-selected', 'false');
             });
