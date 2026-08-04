@@ -11,7 +11,21 @@
       "Bash(git remote *)",
       "Bash(git fetch *)",
       "Bash(git --no-pager log --oneline --all --graph -8)",
-      "Read(//c/Users/HuanNguyen/.claude/hooks/**)"
+      "Read(//c/Users/HuanNguyen/.claude/hooks/**)",
+      "Bash(python -)",
+      "Bash(~/.claude/hooks/validate-commit-msg.sh \"feat\\(ABCD-111\\): reframe research focus and fix publication titles\")",
+      "Bash(echo \"exit=$?\")",
+      "Bash(gh auth *)",
+      "Bash(gh --version)",
+      "Bash(git add *)",
+      "Bash(git --no-pager show --stat ce3e3bf)",
+      "Bash(git rev-list *)",
+      "Bash(git --no-pager log -1 --format='%an <%ae> | %ci' ce3e3bf)",
+      "Bash(~/.claude/hooks/validate-commit-msg.sh \"feat\\(ABCD-111\\): reframe research interests around cybersecurity\")",
+      "Bash(git --no-pager diff --cached --stat)",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(git --no-pager log --oneline -3)"
     ]
   }
 }
