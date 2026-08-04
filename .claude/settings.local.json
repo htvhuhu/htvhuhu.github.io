@@ -3,7 +3,15 @@
     "allow": [
       "WebFetch(domain:doi.org)",
       "WebFetch(domain:www.tandfonline.com)",
-      "WebSearch"
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:link.springer.com)",
+      "Bash(git --no-pager diff --stat)",
+      "Bash(git --no-pager diff)",
+      "Bash(git remote *)",
+      "Bash(git fetch *)",
+      "Bash(git --no-pager log --oneline --all --graph -8)",
+      "Read(//c/Users/HuanNguyen/.claude/hooks/**)"
     ]
   }
 }
